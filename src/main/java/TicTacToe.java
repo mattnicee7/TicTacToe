@@ -169,10 +169,7 @@ public class TicTacToe {
     }
 
     private void switchTurn() {
-        if (actualTurn.equals("Player 1"))
-            actualTurn = "Player 2";
-        else
-            actualTurn = "Player 1";
+        actualTurn = actualTurn.equals("Player 1") ? "Player 2" : "Player 1";
     }
 
     private char getSymbolByTurn() {
