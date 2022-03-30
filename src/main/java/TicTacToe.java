@@ -176,7 +176,7 @@ public class TicTacToe {
     }
 
     private char getSymbolByTurn() {
-        return actualTurn.equals("Player1") ? 'X' : 'O';
+        return actualTurn.equals("Player 1") ? 'X' : 'O';
     }
 
 }
