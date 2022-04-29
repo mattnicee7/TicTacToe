@@ -39,7 +39,7 @@ public class TicTacToe {
         }
     }
 
-    public TicTacToe start() {
+    public void start() {
         @Cleanup Scanner input = new Scanner(System.in);
         do {
             System.out.println("Vez de: " + actualTurn + " (" + getSymbolByTurn() + ")");
@@ -60,8 +60,6 @@ public class TicTacToe {
             if (!gameHasEnded)
                 switchTurn();
         } while (!gameHasEnded);
-
-        return this;
     }
 
     private void printBoard() {
